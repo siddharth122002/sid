@@ -28,7 +28,7 @@ function Home() {
         <div className="h-screen bg-oranges"></div>
       ) : (
         <div
-          className={`relative ${loading && "h-[100svh] overflow-y-hidden"}`}
+          className={`relative ${loading && "h-[100dvh] overflow-y-hidden"}`}
         >
           <Loader loading={loading} setLoading={setLoading} />
           <div className="relative bg-[#FFF1DA] px-[40px] py-[50px]">
