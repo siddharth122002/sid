@@ -8,9 +8,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        alumniSans: ['"Alumni Sans"', "sans-serif"],
+        wireOne: ['"Wire One"', "sans-serif"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        backWhite: "#F5F5F5",
+        oranges: "#FF5733",
+        backCream: "#FFF3E0",
       },
     },
   },
