@@ -11,8 +11,11 @@ function Home() {
   const [loading, setLoading] = useState<boolean>(true);
   const [mainLoad, setMainLoad] = useState<boolean>(true);
   useEffect(() => {
-    setMainLoad(false);
+    document.fonts.ready.then(() => {
+      setMainLoad(false);
+    });
   }, []);
+
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -22,9 +25,11 @@ function Home() {
   return (
     <>
       {mainLoad ? (
-        <div className="h-screen bg-oranges "></div>
+        <div className="h-screen bg-oranges"></div>
       ) : (
-        <div className={`relative ${loading && "h-[100vh] overflow-y-hidden"}`}>
+        <div
+          className={`relative ${loading && "h-[100svh] overflow-y-hidden"}`}
+        >
           <Loader loading={loading} setLoading={setLoading} />
           <div className="relative bg-[#FFF1DA] px-[40px] py-[50px]">
             <Navbar />
