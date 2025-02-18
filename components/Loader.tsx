@@ -53,7 +53,7 @@ function Loader({
       ></div>
       <div
         ref={percentageRef}
-        className="absolute w-32 xl:translate-y-20 bottom-0 left-auto right-auto flex justify-center items-center md:text-[15vw] text-[20vw]"
+        className="absolute w-32 xl:translate-y-20 bottom-20 md:bottom-0 left-auto right-auto flex justify-center items-center md:text-[15vw] text-[20vw]"
       >
         00%
       </div>
