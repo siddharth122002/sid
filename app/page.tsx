@@ -9,7 +9,10 @@ import React, { useEffect, useRef, useState } from "react";
 
 function Home() {
   const [loading, setLoading] = useState<boolean>(true);
-
+  const [mainLoad, setMainLoad] = useState<boolean>(true);
+  useEffect(() => {
+    setMainLoad(false);
+  }, []);
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
@@ -18,15 +21,19 @@ function Home() {
   }, []);
   return (
     <>
-      <div className={`relative ${loading && "h-screen overflow-y-hidden"}`}>
-        <Loader loading={loading} setLoading={setLoading} />
-        <div className="relative bg-[#FFF1DA] px-[40px] py-[50px]">
-          <Navbar />
-          <Landing />
-          <Services />
-          <div className="h-screen bg-red-300"></div>
+      {mainLoad ? (
+        <div className="h-screen bg-oranges "></div>
+      ) : (
+        <div className={`relative ${loading && "h-[100vh] overflow-y-hidden"}`}>
+          <Loader loading={loading} setLoading={setLoading} />
+          <div className="relative bg-[#FFF1DA] px-[40px] py-[50px]">
+            <Navbar />
+            <Landing />
+            <Services />
+            <div className="h-screen bg-red-300"></div>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
