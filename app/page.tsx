@@ -1,15 +1,17 @@
 "use client";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Landing from "@/components/Landing";
 import Loader from "@/components/Loader";
+import Menu from "@/components/Menu";
 import Navbar from "@/components/Navbar";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import React, { useEffect, useRef, useState } from "react";
-
+import React, { useEffect, useState } from "react";
 function Home() {
   const [loading, setLoading] = useState<boolean>(true);
   const [mainLoad, setMainLoad] = useState<boolean>(true);
+  const [open, setOpen] = useState<boolean>(false);
   useEffect(() => {
     document.fonts.ready.then(() => {
       setMainLoad(false);
@@ -22,20 +24,28 @@ function Home() {
       new LocomotiveScroll();
     })();
   }, []);
+
   return (
     <>
       {mainLoad ? (
         <div className="h-screen bg-oranges"></div>
       ) : (
         <div
-          className={`relative ${loading && "h-[100dvh] overflow-y-hidden"}`}
+          className={`relative overflow-x-hidden ${
+            loading && "h-[100svh] overflow-y-hidden"
+          }`}
         >
           <Loader loading={loading} setLoading={setLoading} />
-          <div className="relative bg-[#FFF1DA] px-[40px] py-[50px]">
-            <Navbar />
+
+          <Menu open={open} setOpen={setOpen} />
+
+          <div className="relative  ">
+            <Navbar open={open} setOpen={setOpen} />
             <Landing />
             <Services />
-            <div className="h-screen bg-red-300"></div>
+            <Projects />
+            <About />
+            <Contact />
           </div>
         </div>
       )}

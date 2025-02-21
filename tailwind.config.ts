@@ -12,6 +12,11 @@ export default {
         alumniSans: ['"Alumni Sans"', "sans-serif"],
         wireOne: ['"Wire One"', "sans-serif"],
       },
+      fontWeight: {
+        normal: "400", // Normal weight
+        semibold: "600", // Semibold weight
+        bold: "700", // Bold weight
+      },
       colors: {
         backWhite: "#F5F5F5",
         oranges: "#FF5733",

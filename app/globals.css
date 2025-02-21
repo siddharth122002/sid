@@ -1,7 +1,8 @@
-@import '@fontsource/alumni-sans';
+@import '@fontsource/alumni-sans/400.css'; /* Normal weight */
+@import '@fontsource/alumni-sans/600.css'; /* Semibold weight */
+@import '@fontsource/alumni-sans/700.css'; /* Bold weight */
 @import '@fontsource/wire-one';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
