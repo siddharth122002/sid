@@ -22,7 +22,7 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="text-oranges pt-[30px]  min-h-screen  font-alumniSans px-[20px] md:px-[40px] md:py-[50px] md:pt-[150px] relative"
+      className="text-oranges pt-[30px]  min-h-screen  font-alumniSans px-[20px] md:px-[40px] md:py-[50px] xl:pt-[50px] relative"
     >
       <div className="text-[#3c3c3c] text-4xl md:text-5xl w-full font-semibold">
         <p>Have a project in mind?</p>

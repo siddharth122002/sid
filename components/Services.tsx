@@ -47,7 +47,7 @@ function Services() {
           scrollTrigger: {
             trigger: ".pin-design",
             pin: true,
-            markers: true,
+            // markers: true,
             start: "start 20%",
             end: "top 7%",
             pinSpacing: false,
@@ -70,7 +70,7 @@ function Services() {
           scrollTrigger: {
             trigger: ".pin-design",
             pin: true,
-            markers: true,
+            // markers: true,
             start: "top 25%",
             end: "top 0%",
             pinSpacing: false,
@@ -201,7 +201,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="relative pb-[160px]">
+          <div className="relative xl:pb-[100px]">
             <div>
               <p className="-translate-x-16 text-5xl w-fit absolute hidden md:block">
                 2.3
