@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 function Projects() {
@@ -95,22 +96,24 @@ function Projects() {
           <div className="w-full h-96 bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden">
             <Image
               src={`/laptop.jpg`}
-              className="object-cover "
+              className="object-cover saturate-0"
               fill
               alt="laptop"
             />
             <div
               data-scroll
               data-scroll-speed="0.1"
-              className="w-80 h-56 rounded-md overflow-hidden relative"
+              className="w-80 px-2 h-56 rounded-md overflow-hidden relative"
             >
-              <video
-                src="/evently-port.mp4"
-                autoPlay
-                muted
-                loop
-                className="object-cover  h-full w-full"
-              />
+              <a href="https://evently-nu-five.vercel.app/" target="_blank">
+                <video
+                  src="/evently-port.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  className="object-contain h-full w-full"
+                />
+              </a>
             </div>
           </div>
           <h1 className="text-6xl my-[30px] uppercase font-bold text-[#1E1E1E]">
@@ -121,22 +124,24 @@ function Projects() {
           <div className="w-full h-96 bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden">
             <Image
               src={`/naruto.jpg`}
-              className="object-cover "
+              className="object-cover saturate-0"
               fill
               alt="laptop"
             />
             <div
               data-scroll
               data-scroll-speed="0.1"
-              className="w-80 h-56 rounded-md overflow-hidden relative"
+              className="w-80 px-2 h-56 rounded-md overflow-hidden relative"
             >
-              <video
-                src="/naruto-port.mp4"
-                autoPlay
-                muted
-                loop
-                className="object-cover  h-full w-full"
-              />
+              <a href="https://naruto-chatbot.vercel.app/" target="_blank">
+                <video
+                  src="/naruto-port.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  className="object-contain  h-full w-full"
+                />
+              </a>
             </div>
           </div>
           <h1 className="text-6xl my-[30px] uppercase font-bold text-[#1E1E1E]">
@@ -147,22 +152,24 @@ function Projects() {
           <div className="w-full h-96 bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden">
             <Image
               src={`/galaxy.jpg`}
-              className="object-cover "
+              className="object-cover saturate-0"
               fill
               alt="laptop"
             />
             <div
               data-scroll
               data-scroll-speed="0.1"
-              className="w-80 h-56 rounded-md overflow-hidden relative"
+              className="w-80 px-2 h-56 rounded-md overflow-hidden relative"
             >
-              <video
-                src="/galaxy-port.mp4"
-                autoPlay
-                muted
-                loop
-                className="object-cover  h-full w-full"
-              />
+              <a href="https://galaxy-eta-bice.vercel.app/" target="_blank">
+                <video
+                  src="/galaxy-port.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  className="object-contain  h-full w-full"
+                />
+              </a>
             </div>
           </div>
           <h1 className="text-6xl my-[30px] uppercase font-bold text-[#1E1E1E]">
@@ -246,35 +253,44 @@ function Projects() {
           {/* evently */}
           <div className="h-screen w-full flex justify-center items-center ">
             <div className="relative w-96 bg-red-800 h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
-              <video
-                src="/evently-port.mp4"
-                autoPlay
-                muted
-                loop
-                className="object-cover h-full w-full"
-              />
+              <a href="https://evently-nu-five.vercel.app/" target="_blank">
+                <video
+                  src="/evently-port.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  disablePictureInPicture
+                  className="object-cover h-full w-full"
+                />
+              </a>
             </div>
           </div>
           <div className="h-screen w-full flex justify-center items-center ">
             <div className="second-img relative w-96 bg-red-800 h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
-              <video
-                src="/naruto-port.mp4"
-                autoPlay
-                muted
-                loop
-                className="object-cover h-full w-full"
-              />
+              <a href="https://naruto-chatbot.vercel.app/" target="_blank">
+                <video
+                  src="/naruto-port.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  disablePictureInPicture
+                  className="object-cover h-full w-full"
+                />
+              </a>
             </div>
           </div>
           <div className="h-screen w-full flex justify-center items-center ">
             <div className="third-img relative w-96 bg-red-800 h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
-              <video
-                src="/galaxy-port.mp4"
-                autoPlay
-                muted
-                loop
-                className="object-cover h-full w-full"
-              />
+              <a href="https://galaxy-eta-bice.vercel.app/" target="_blank">
+                <video
+                  src="/galaxy-port.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  disablePictureInPicture
+                  className="object-cover h-full w-full"
+                />
+              </a>
             </div>
           </div>
         </div>

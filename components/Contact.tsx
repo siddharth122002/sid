@@ -85,7 +85,7 @@ function Contact() {
       >
         <FaArrowUpLong />
       </div>
-      <div className=" md:w-2/3 absolute bottom-[5vw] md:bottom-4 font-bold xl:text-8xl md:text-7xl text-4xl text-[#1e1e1e] ">
+      <div className=" md:w-2/3 absolute bottom-[5vw] md:bottom-4 font-bold xl:text-8xl md:text-7xl text-[9vw] text-[#1e1e1e] ">
         © 2025 SIDDHARTH KUMAR
       </div>
     </div>
