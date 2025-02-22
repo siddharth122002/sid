@@ -32,7 +32,7 @@ function Home() {
       ) : (
         <div
           className={`relative overflow-x-hidden ${
-            loading && "h-[100svh] overflow-y-hidden"
+            loading && "h-[100vh] overflow-y-hidden"
           }`}
         >
           <Loader loading={loading} setLoading={setLoading} />
