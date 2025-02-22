@@ -5,7 +5,7 @@ function About() {
   return (
     <div
       id="about"
-      className="text-oranges overflow-x-hidden font-alumniSans px-[20px] md:px-[40px] pb-[30px] md:pb-[50px] pt-[30px] md:pt-[50px] min-h-screen"
+      className="text-oranges overflow-x-hidden font-alumniSans px-[20px]  md:px-[40px] pb-[30px] md:pb-[50px] pt-[30px] xl:pt-[100px] md:pt-[50px] min-h-screen"
     >
       {/* Heading */}
       <h1 className="uppercase font-semibold text-7xl md:text-[12vw]">About</h1>

@@ -31,7 +31,7 @@ function Menu({
   return (
     <>
       <div
-        className={`menu bg-oranges h-[100dvh] fixed top-0 left-0 z-[999] translate-x-[100%] w-full overflow-hidden`}
+        className={`menu bg-oranges h-[100svh] fixed top-0 left-0 z-[999] translate-x-[100%] w-full overflow-hidden`}
       >
         <div
           onClick={() => {
@@ -49,7 +49,7 @@ function Menu({
           className="uppercase text-white  font-alumniSans md:text-9xl text-7xl  h-full flex flex-col  justify-center pl-[10vw]"
         >
           <Link
-            className="relative w-fit  md:mb-8 md:h-28 md:overflow-hidden "
+            className="relative w-48 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#home"}
           >
             <li
@@ -59,12 +59,12 @@ function Menu({
             >
               <div className="flex -translate-x-6 hover:translate-x-0 transition-all duration-500">
                 <p>.</p>
-                <p>Home</p>
+                <p className="translate-x-3">Home</p>
               </div>
             </li>
           </Link>
           <Link
-            className="relative w-fit  md:mb-8 md:h-28 md:overflow-hidden "
+            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#services"}
           >
             <li
@@ -74,12 +74,12 @@ function Menu({
             >
               <div className="flex -translate-x-6 hover:translate-x-0 transition-all duration-500">
                 <p>.</p>
-                <p>services</p>
+                <p className="translate-x-3">services</p>
               </div>
             </li>
           </Link>
           <Link
-            className="relative w-fit  md:mb-8 md:h-28 md:overflow-hidden "
+            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#projects"}
           >
             <li
@@ -89,12 +89,12 @@ function Menu({
             >
               <div className="flex -translate-x-6 hover:translate-x-0 transition-all duration-500">
                 <p>.</p>
-                <p>projects</p>
+                <p className="translate-x-3">projects</p>
               </div>
             </li>
           </Link>
           <Link
-            className="relative w-fit  md:mb-8 md:h-28 md:overflow-hidden "
+            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#about"}
           >
             <li
@@ -104,12 +104,12 @@ function Menu({
             >
               <div className="flex -translate-x-6 hover:translate-x-0 transition-all duration-500">
                 <p>.</p>
-                <p>about</p>
+                <p className="translate-x-3">about</p>
               </div>
             </li>
           </Link>
           <Link
-            className="relative w-fit  md:mb-8 md:h-28 md:overflow-hidden "
+            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#contact"}
           >
             <li
@@ -119,7 +119,7 @@ function Menu({
             >
               <div className="flex -translate-x-6 hover:translate-x-0 transition-all duration-500">
                 <p>.</p>
-                <p>contact</p>
+                <p className="translate-x-3">contact</p>
               </div>
             </li>
           </Link>

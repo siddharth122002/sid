@@ -25,7 +25,7 @@ function Services() {
             pin: true,
             // markers: true,
             start: "start 33%",
-            end: "top 23%",
+            end: "top 29%",
             pinSpacing: false,
           },
         });
@@ -62,7 +62,7 @@ function Services() {
             pin: true,
             // markers: true,
             start: "top 10%",
-            end: "top -95%",
+            end: "top -72%",
             pinSpacing: false,
           },
         });
@@ -71,8 +71,8 @@ function Services() {
             trigger: ".pin-design",
             pin: true,
             // markers: true,
-            start: "top 25%",
-            end: "top 0%",
+            start: "top 23%",
+            end: "top 10%",
             pinSpacing: false,
           },
         });
@@ -101,12 +101,14 @@ function Services() {
         <div className="absolute top-0  bg-black h-[1px] w-full"></div>
         <div className="md:w-1/2 font-bold text-[#1E1E1E] text-7xl">
           <p className="hidden md:block">(01)</p>
-          <p className=" text-5xl md:hidden pb-[80px]">(01) Web Development/</p>
+          <p className=" text-5xl md:hidden pb-[3vh] md:pb-[80px]">
+            (01) Web Development/
+          </p>
         </div>
         <div className="md:w-1/2 text-[#1E1E1E] text-7xl font-bold ">
           <h2 className="pb-[80px] hidden md:block">Web Development/</h2>
 
-          <div className="relative pb-[60px]">
+          <div className="relative pb-[3vh] md:pb-[80px]">
             <div>
               <p className="-translate-x-16  text-5xl w-fit absolute hidden md:block">
                 1.1
@@ -122,7 +124,7 @@ function Services() {
               </div>
             </div>
           </div>
-          <div className="relative pb-[60px]">
+          <div className="relative pb-[3vh] md:pb-[80px]">
             <div className="">
               <p className="-translate-x-16 text-5xl w-fit absolute hidden md:block">
                 1.2
@@ -162,12 +164,14 @@ function Services() {
         <div className="absolute top-0 bg-black h-[1px] w-full"></div>
         <div className="md:w-1/2 font-bold text-[#1E1E1E] text-7xl">
           <p className="hidden md:block">(02)</p>
-          <p className="text-5xl md:hidden pb-[80px]">(02) Web Design/</p>
+          <p className="text-5xl md:hidden pb-[3vh] md:pb-[80px]">
+            (02) Web Design/
+          </p>
         </div>
         <div className="md:w-1/2 text-[#1E1E1E] text-7xl font-bold">
           <h2 className="pb-[80px] hidden md:block">Web Design/</h2>
 
-          <div className="relative pb-[60px] ">
+          <div className="relative pb-[3vh] md:pb-[80px] ">
             <div>
               <p className="-translate-x-16 text-5xl w-fit absolute hidden md:block">
                 2.1
@@ -184,7 +188,7 @@ function Services() {
             </div>
           </div>
 
-          <div className="relative pb-[60px]">
+          <div className="relative pb-[3vh] md:pb-[80px]">
             <div>
               <p className="-translate-x-16 text-5xl w-fit absolute hidden md:block">
                 2.2

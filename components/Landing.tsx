@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 function Landing() {
   const [transfromStyle, setTransformStyle] = useState<string>("");
   const [shadowStyle, setShadowStyle] = useState<string>(
-    "-10px 10px 0 #FF5733,-6px 6px 0 #FF5733,0px 0px 20px #FF5733"
+    "-6px 6px 0 #FF5733,-3px 3px 0 #FF5733,0px 0px 20px #FF5733"
   );
   const moveRef = useRef<HTMLDivElement | null>(null);
 

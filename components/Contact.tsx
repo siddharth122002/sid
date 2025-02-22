@@ -27,11 +27,11 @@ function Contact() {
       <div className="text-[#3c3c3c] text-4xl md:text-5xl w-full font-semibold">
         <p>Have a project in mind?</p>
       </div>
-      <div className="">
+      <div>
         <h1
           style={{
             textShadow:
-              "-10px 10px 0 #FF5733,-6px 6px 0 #FF5733,0px 0px 20px #FF5733",
+              "-6px 6px 0 #FF5733,-3px 3px 0 #FF5733,0px 0px 20px #FF5733",
           }}
           className="uppercase  font-bold pt-[80px] text-7xl md:text-[13vw] xl:text-[12vw] xl:leading-[10vw] leading-[15vw] text-center text-white font-alumniSans"
         >
@@ -39,7 +39,7 @@ function Contact() {
         </h1>
       </div>
 
-      <div className=" w-full font-bold md:text-5xl text-4xl xl:text-8xl flex justify-between  items-center text-[#1e1e1e] md:pb-[40px] md:mt-40 mt-[300px]">
+      <div className=" w-full font-bold md:text-5xl text-4xl xl:text-8xl flex justify-between  items-center text-[#1e1e1e] md:pb-[40px] md:mt-40 mt-[60vw]">
         <h2>Socials</h2>
         <h2>Send me an email:</h2>
       </div>
@@ -81,11 +81,11 @@ function Contact() {
       </div>
       <div
         onClick={handleScroll}
-        className="absolute bottom-[30px] rounded-full right-[10px] md:right-[40px] bg-oranges md:h-20 md:w-20 h-16 w-16 text-white flex justify-center items-center cursor-pointer md:text-3xl"
+        className="absolute bottom-[5vw] rounded-full right-[10px] md:right-[40px] bg-oranges md:h-20 md:w-20 h-16 w-16 text-white flex justify-center items-center cursor-pointer md:text-3xl"
       >
         <FaArrowUpLong />
       </div>
-      <div className=" md:w-2/3 absolute bottom-10 md:bottom-4 font-bold xl:text-8xl md:text-7xl text-4xl text-[#1e1e1e] ">
+      <div className=" md:w-2/3 absolute bottom-[5vw] md:bottom-4 font-bold xl:text-8xl md:text-7xl text-4xl text-[#1e1e1e] ">
         © 2025 SIDDHARTH KUMAR
       </div>
     </div>
