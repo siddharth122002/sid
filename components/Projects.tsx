@@ -76,7 +76,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="text-oranges font-alumniSans pt-[130px] md:pt-[100px] px-[20px] md:px-[40px] "
+      className="text-oranges font-alumniSans  md:pt-[100px] px-[20px] md:px-[40px] "
     >
       <h1 className="uppercase font-semibold text-7xl md:text-[12vw]">
         projects

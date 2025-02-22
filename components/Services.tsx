@@ -60,20 +60,11 @@ function Services() {
           scrollTrigger: {
             trigger: ".pin-web",
             pin: true,
-            // markers: true,
-            start: "top 10%",
-            end: "top -64%",
+            markers: true,
+            start: "top top",
+            end: "bottom top",
             pinSpacing: false,
-          },
-        });
-        gsap.to(".pin-design", {
-          scrollTrigger: {
-            trigger: ".pin-design",
-            pin: true,
-            // markers: true,
-            start: "top 23%",
-            end: "top 15%",
-            pinSpacing: false,
+            scroller: "body",
           },
         });
       });
