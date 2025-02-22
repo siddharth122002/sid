@@ -116,7 +116,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <h1 className="text-6xl my-[30px] uppercase font-bold text-[#1E1E1E]">
+          <h1 className="text-6xl mb-[30px] uppercase font-bold text-[#1E1E1E]">
             01. Evently
           </h1>
         </div>
@@ -144,7 +144,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <h1 className="text-6xl my-[30px] uppercase font-bold text-[#1E1E1E]">
+          <h1 className="text-6xl mb-[30px] uppercase font-bold text-[#1E1E1E]">
             02. Naruto Chatbot
           </h1>
         </div>
@@ -172,7 +172,7 @@ function Projects() {
               </a>
             </div>
           </div>
-          <h1 className="text-6xl my-[30px] uppercase font-bold text-[#1E1E1E]">
+          <h1 className="text-6xl mb-[30px] uppercase font-bold text-[#1E1E1E]">
             03. Galaxy
           </h1>
         </div>
