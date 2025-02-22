@@ -62,7 +62,7 @@ function Services() {
             pin: true,
             // markers: true,
             start: "top 10%",
-            end: "top -72%",
+            end: "top -64%",
             pinSpacing: false,
           },
         });
@@ -72,7 +72,7 @@ function Services() {
             pin: true,
             // markers: true,
             start: "top 23%",
-            end: "top 10%",
+            end: "top 15%",
             pinSpacing: false,
           },
         });
