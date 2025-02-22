@@ -60,7 +60,7 @@ function Services() {
           scrollTrigger: {
             trigger: ".pin-web",
             pin: true,
-            markers: true,
+            // markers: true,
             start: "top top",
             end: "bottom top",
             pinSpacing: false,
