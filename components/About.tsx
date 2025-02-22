@@ -23,7 +23,7 @@ function About() {
         {/* Image Container */}
         <div
           data-scroll
-          data-scroll-speed="0.05"
+          data-scroll-speed="0.02"
           style={{
             boxShadow: "-10px 10px 0 #FF5733, -6px 6px 0 #FF5733",
           }}

@@ -54,20 +54,20 @@ function Services() {
           },
         });
       });
-      mm.add("(max-width: 767px)", () => {
-        // small
-        gsap.to(".pin-web", {
-          scrollTrigger: {
-            trigger: ".pin-web",
-            pin: true,
-            // markers: true,
-            start: "top top",
-            end: "bottom top",
-            pinSpacing: false,
-            scroller: "body",
-          },
-        });
-      });
+      // mm.add("(max-width: 767px)", () => {
+      //   // small
+      //   gsap.to(".pin-web", {
+      //     scrollTrigger: {
+      //       trigger: ".pin-web",
+      //       pin: true,
+      //       markers: true,
+      //       start: "top top",
+      //       end: "bottom top",
+      //       pinSpacing: false,
+      //       scroller: "body",
+      //     },
+      //   });
+      // });
     },
     { dependencies: [], revertOnUpdate: true }
   );
@@ -151,7 +151,7 @@ function Services() {
       </div>
 
       {/* web design */}
-      <div className="pin-design bg-white relative flex pt-[40px] md:flex-row flex-col items-start mt-[160px]">
+      <div className="pin-design bg-white relative flex pt-[40px] md:flex-row flex-col items-start mt-[40px] md:mt-[160px]">
         <div className="absolute top-0 bg-black h-[1px] w-full"></div>
         <div className="md:w-1/2 font-bold text-[#1E1E1E] text-7xl">
           <p className="hidden md:block">(02)</p>

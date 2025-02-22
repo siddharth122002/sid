@@ -2,7 +2,6 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useRef, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 function Projects() {
@@ -93,7 +92,7 @@ function Projects() {
       {/* mobile view */}
       <div className="mt-[30px] md:hidden">
         <div>
-          <div className="w-full h-96 bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden">
+          <div className="w-full h-[40vh] bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
               src={`/laptop.jpg`}
               className="object-cover saturate-0"
@@ -102,7 +101,7 @@ function Projects() {
             />
             <div
               data-scroll
-              data-scroll-speed="0.1"
+              data-scroll-speed="0.02"
               className="w-80 px-2 h-56 rounded-md overflow-hidden relative"
             >
               <a href="https://evently-nu-five.vercel.app/" target="_blank">
@@ -115,13 +114,13 @@ function Projects() {
                 />
               </a>
             </div>
+            <h1 className="text-6xl mb-[30px] uppercase font-bold text-white text-center z-10 ">
+              01. Evently
+            </h1>
           </div>
-          <h1 className="text-6xl mb-[30px] uppercase font-bold text-[#1E1E1E]">
-            01. Evently
-          </h1>
         </div>
         <div>
-          <div className="w-full h-96 bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden">
+          <div className="w-full mt-8  h-[40vh] bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
               src={`/naruto.jpg`}
               className="object-cover saturate-0"
@@ -130,7 +129,7 @@ function Projects() {
             />
             <div
               data-scroll
-              data-scroll-speed="0.1"
+              data-scroll-speed="0.02"
               className="w-80 px-2 h-56 rounded-md overflow-hidden relative"
             >
               <a href="https://naruto-chatbot.vercel.app/" target="_blank">
@@ -143,13 +142,13 @@ function Projects() {
                 />
               </a>
             </div>
+            <h1 className="text-6xl mb-[30px] uppercase font-bold text-white text-center z-10">
+              02. Naruto Chatbot
+            </h1>
           </div>
-          <h1 className="text-6xl mb-[30px] uppercase font-bold text-[#1E1E1E]">
-            02. Naruto Chatbot
-          </h1>
         </div>
         <div>
-          <div className="w-full h-96 bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden">
+          <div className="w-full mt-8 h-[40vh] bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
               src={`/galaxy.jpg`}
               className="object-cover saturate-0"
@@ -158,7 +157,7 @@ function Projects() {
             />
             <div
               data-scroll
-              data-scroll-speed="0.1"
+              data-scroll-speed="0.02"
               className="w-80 px-2 h-56 rounded-md overflow-hidden relative"
             >
               <a href="https://galaxy-eta-bice.vercel.app/" target="_blank">
@@ -171,10 +170,10 @@ function Projects() {
                 />
               </a>
             </div>
+            <h1 className="text-6xl mb-[30px] uppercase font-bold text-white text-center z-10">
+              03. Galaxy
+            </h1>
           </div>
-          <h1 className="text-6xl mb-[30px] uppercase font-bold text-[#1E1E1E]">
-            03. Galaxy
-          </h1>
         </div>
       </div>
 
