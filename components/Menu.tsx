@@ -31,7 +31,7 @@ function Menu({
   return (
     <>
       <div
-        className={`menu bg-oranges h-[100svh] fixed top-0 left-0 z-[999] translate-x-[100%] w-full overflow-hidden`}
+        className={`menu bg-oranges h-[100vh] fixed top-0 left-0 z-[999] translate-x-[100%] w-full overflow-hidden`}
       >
         <div
           onClick={() => {
