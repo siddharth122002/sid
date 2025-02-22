@@ -57,7 +57,7 @@ function Landing() {
     >
       <div
         data-scroll
-        data-scroll-speed="-0.5"
+        data-scroll-speed="-0.3"
         style={{ clipPath: "circle(50% at 50% 50%)" }}
         className="absolute md:top-[25%]  md:right-[20%] md:h-[60vw] md:w-[60vw] h-80 w-80 top-[31%] bg-[#FFE5BC]"
       ></div>
