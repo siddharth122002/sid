@@ -92,7 +92,7 @@ function Projects() {
       {/* mobile view */}
       <div className="mt-[30px] md:hidden">
         <div>
-          <div className="w-full h-[40vh] bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden flex-col">
+          <div className="w-full h-[40vh]  flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
               src={`/laptop.jpg`}
               className="object-cover saturate-0"
@@ -120,12 +120,12 @@ function Projects() {
           </div>
         </div>
         <div>
-          <div className="w-full mt-8  h-[40vh] bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden flex-col">
+          <div className="w-full mt-8  h-[40vh]  flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
               src={`/naruto.jpg`}
               className="object-cover saturate-0"
               fill
-              alt="laptop"
+              alt="naruto"
             />
             <div
               data-scroll
@@ -148,12 +148,12 @@ function Projects() {
           </div>
         </div>
         <div>
-          <div className="w-full mt-8 h-[40vh] bg-red-800 flex justify-center items-center relative rounded-md overflow-hidden flex-col">
+          <div className="w-full mt-8 h-[40vh]  flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
               src={`/galaxy.jpg`}
               className="object-cover saturate-0"
               fill
-              alt="laptop"
+              alt="galaxy"
             />
             <div
               data-scroll
@@ -217,25 +217,25 @@ function Projects() {
           </div>
         </div>
         {/* right images */}
-        <div className="w-1/2 text-white relative bg-green-500 ">
+        <div className="w-1/2 text-white relative ">
           <div className="relative w-full h-full transition-all duration-1000">
             <Image
               src={`/laptop.jpg`}
-              className="object-cover transition-all duration-1000 bg-red-800 saturate-0"
+              className="object-cover transition-all duration-1000  saturate-0"
               fill
               alt="laptop"
             />
             <Image
               ref={secondRef}
               src={`/naruto.jpg`}
-              className="opacity-0 object-cover transition-all duration-1000 bg-red-800 saturate-0"
+              className="opacity-0 object-cover transition-all duration-1000  saturate-0"
               fill
               alt="naruto"
             />
             <Image
               ref={thirdRef}
               src={`/galaxy.jpg`}
-              className="opacity-0 object-cover transition-all duration-1000 bg-red-800 saturate-0"
+              className="opacity-0 object-cover transition-all duration-1000  saturate-0"
               fill
               alt="galaxy"
             />
@@ -251,7 +251,7 @@ function Projects() {
         <div className="w-1/2  h-[300vh]">
           {/* evently */}
           <div className="h-screen w-full flex justify-center items-center ">
-            <div className="relative w-96 bg-red-800 h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
+            <div className="relative w-96  h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
               <a href="https://evently-nu-five.vercel.app/" target="_blank">
                 <video
                   src="/evently-port.mp4"
@@ -265,7 +265,7 @@ function Projects() {
             </div>
           </div>
           <div className="h-screen w-full flex justify-center items-center ">
-            <div className="second-img relative w-96 bg-red-800 h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
+            <div className="second-img relative w-96  h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
               <a href="https://naruto-chatbot.vercel.app/" target="_blank">
                 <video
                   src="/naruto-port.mp4"
@@ -279,7 +279,7 @@ function Projects() {
             </div>
           </div>
           <div className="h-screen w-full flex justify-center items-center ">
-            <div className="third-img relative w-96 bg-red-800 h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
+            <div className="third-img relative w-96  h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
               <a href="https://galaxy-eta-bice.vercel.app/" target="_blank">
                 <video
                   src="/galaxy-port.mp4"
