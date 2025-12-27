@@ -35,14 +35,14 @@ function About() {
         {/* Text Content */}
         <div className="w-full md:w-2/3">
           <p className="text-[#3c3c3c] text-3xl md:text-5xl">
-            I’m a Full-Stack Developer from Dehradun, eager to apply my skills
-            in building dynamic and visually appealing web applications. While
-            I’m a fresher, I have a strong foundation in{" "}
+            I’m a Full-Stack Developer from Dehradun with practical experience
+            in web and mobile development, having worked on a SaaS product at
+            ValetX. I build modern applications using{" "}
             <span className="font-bold">React</span>,{" "}
-            <span className="font-bold">Next.js</span>, and{" "}
-            <span className="font-bold">Tailwind CSS</span>, and I’m
-            continuously learning to create seamless digital experiences with
-            clean, efficient code.
+            <span className="font-bold">Next.js</span>,{" "}
+            <span className="font-bold">React Native</span>, and{" "}
+            <span className="font-bold">Tailwind CSS</span>, with a strong focus
+            on clean architecture, usability, and performance.
           </p>
         </div>
       </div>

@@ -19,13 +19,41 @@ function Projects() {
   };
   useGSAP(
     () => {
-      gsap.to(".pin", {
-        scrollTrigger: {
-          trigger: ".pin",
-          pin: true,
-          pinSpacing: false,
-          // markers: true,
-          end: "top -200%",
+      // Responsive pin behavior: use matchMedia to adjust start/end per viewport
+      ScrollTrigger.matchMedia({
+        // Large screens (e.g., big monitor)
+        "(min-width: 1200px)": () => {
+          const tween = gsap.to(".pin", {
+            scrollTrigger: {
+              trigger: ".pin",
+              pin: true,
+              pinSpacing: false,
+              // markers: true,
+              start: "top -5%",
+              end: "top -200%",
+            },
+          });
+          return () => {
+            tween.scrollTrigger && tween.scrollTrigger.kill();
+            tween.kill();
+          };
+        },
+        // Medium / smaller screens (when you shrink the window)
+        "(max-width: 1199px)": () => {
+          const tween = gsap.to(".pin", {
+            scrollTrigger: {
+              trigger: ".pin",
+              pin: true,
+              pinSpacing: false,
+              // markers: true,
+              start: "top 0%",
+              end: "top -200%",
+            },
+          });
+          return () => {
+            tween.scrollTrigger && tween.scrollTrigger.kill();
+            tween.kill();
+          };
         },
       });
       gsap.to(".second-img", {

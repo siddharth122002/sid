@@ -19,16 +19,16 @@ function Services() {
             pinSpacing: false,
           },
         });
-        gsap.to(".pin-design", {
-          scrollTrigger: {
-            trigger: ".pin-design",
-            pin: true,
-            // markers: true,
-            start: "start 33%",
-            end: "top 29%",
-            pinSpacing: false,
-          },
-        });
+        // gsap.to(".pin-design", {
+        //   scrollTrigger: {
+        //     trigger: ".pin-design",
+        //     pin: true,
+        //     markers: true,
+        //     start: "start 33%",
+        //     end: "top 29%",
+        //     pinSpacing: false,
+        //   },
+        // });
       });
 
       mm.add("(min-width: 768px) and (max-width: 1279px)", () => {
@@ -49,7 +49,7 @@ function Services() {
             pin: true,
             // markers: true,
             start: "start 20%",
-            end: "top 7%",
+            end: "top 18%",
             pinSpacing: false,
           },
         });

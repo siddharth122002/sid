@@ -49,7 +49,7 @@ function Menu({
           className="uppercase text-white  font-alumniSans md:text-9xl text-7xl  h-full flex flex-col  justify-center pl-[10vw]"
         >
           <Link
-            className="relative w-48 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
+            className="relative pr-8 w-48 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#home"}
           >
             <li
@@ -64,7 +64,7 @@ function Menu({
             </li>
           </Link>
           <Link
-            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
+            className="relative pr-8  w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#services"}
           >
             <li
@@ -79,7 +79,7 @@ function Menu({
             </li>
           </Link>
           <Link
-            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
+            className="relative w-56 md:w-fit pr-8  md:mb-8 md:h-28 overflow-hidden "
             href={"#projects"}
           >
             <li
@@ -94,7 +94,7 @@ function Menu({
             </li>
           </Link>
           <Link
-            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
+            className="relative pr-8 w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#about"}
           >
             <li
@@ -109,7 +109,7 @@ function Menu({
             </li>
           </Link>
           <Link
-            className="relative w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
+            className="relative pr-8 w-56 md:w-fit  md:mb-8 md:h-28 overflow-hidden "
             href={"#contact"}
           >
             <li
