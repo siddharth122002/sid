@@ -11,6 +11,12 @@ function Projects() {
   const secondRef = useRef<HTMLImageElement | null>(null);
   const thirdRef = useRef<HTMLImageElement | null>(null);
   const textRef = useRef<HTMLDivElement | null>(null);
+
+  const transparentPixel =
+    "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+  const handleVideoLoaded = (e: React.SyntheticEvent<HTMLVideoElement>) => {
+    (e.currentTarget as HTMLVideoElement).style.opacity = "1";
+  };
   useGSAP(
     () => {
       gsap.to(".pin", {
@@ -94,10 +100,14 @@ function Projects() {
         <div>
           <div className="w-full h-[40vh]  flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
-              src={`/laptop.jpg`}
+              src={`/laptop.webp`}
               className="object-cover saturate-0"
               fill
               alt="laptop"
+              placeholder="blur"
+              blurDataURL={transparentPixel}
+              sizes="100vw"
+              loading="eager"
             />
             <div
               data-scroll
@@ -106,11 +116,15 @@ function Projects() {
             >
               <a href="https://evently-nu-five.vercel.app/" target="_blank">
                 <video
-                  src="/evently-port.mp4"
+                  src="/evently-port.webm"
+                  poster="/laptop.webp"
+                  preload="metadata"
+                  playsInline
                   autoPlay
                   muted
                   loop
-                  className="object-contain h-full w-full"
+                  onLoadedData={handleVideoLoaded}
+                  className="opacity-0 transition-opacity duration-500 object-contain h-full w-full"
                 />
               </a>
             </div>
@@ -122,10 +136,13 @@ function Projects() {
         <div>
           <div className="w-full mt-8  h-[40vh]  flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
-              src={`/naruto.jpg`}
+              src={`/naruto.webp`}
               className="object-cover saturate-0"
               fill
               alt="naruto"
+              placeholder="blur"
+              blurDataURL={transparentPixel}
+              sizes="100vw"
             />
             <div
               data-scroll
@@ -134,11 +151,15 @@ function Projects() {
             >
               <a href="https://naruto-chatbot.vercel.app/" target="_blank">
                 <video
-                  src="/naruto-port.mp4"
+                  src="/naruto-port.webm"
+                  poster="/naruto.webp"
+                  preload="metadata"
+                  playsInline
                   autoPlay
                   muted
                   loop
-                  className="object-contain  h-full w-full"
+                  onLoadedData={handleVideoLoaded}
+                  className="opacity-0 transition-opacity duration-500 object-contain  h-full w-full"
                 />
               </a>
             </div>
@@ -150,10 +171,13 @@ function Projects() {
         <div>
           <div className="w-full mt-8 h-[40vh]  flex justify-center items-center relative rounded-md overflow-hidden flex-col">
             <Image
-              src={`/galaxy.jpg`}
+              src={`/galaxy.webp`}
               className="object-cover saturate-0"
               fill
               alt="galaxy"
+              placeholder="blur"
+              blurDataURL={transparentPixel}
+              sizes="100vw"
             />
             <div
               data-scroll
@@ -162,11 +186,15 @@ function Projects() {
             >
               <a href="https://galaxy-eta-bice.vercel.app/" target="_blank">
                 <video
-                  src="/galaxy-port.mp4"
+                  src="/galaxy-port.webm"
+                  poster="/galaxy.webp"
+                  preload="metadata"
+                  playsInline
                   autoPlay
                   muted
                   loop
-                  className="object-contain  h-full w-full"
+                  onLoadedData={handleVideoLoaded}
+                  className="opacity-0 transition-opacity duration-500 object-contain  h-full w-full"
                 />
               </a>
             </div>
@@ -220,24 +248,34 @@ function Projects() {
         <div className="w-1/2 text-white relative ">
           <div className="relative w-full h-full transition-all duration-1000">
             <Image
-              src={`/laptop.jpg`}
+              src={`/laptop.webp`}
               className="object-cover transition-all duration-1000  saturate-0"
               fill
               alt="laptop"
+              placeholder="blur"
+              blurDataURL={transparentPixel}
+              sizes="50vw"
+              priority
             />
             <Image
               ref={secondRef}
-              src={`/naruto.jpg`}
+              src={`/naruto.webp`}
               className="opacity-0 object-cover transition-all duration-1000  saturate-0"
               fill
               alt="naruto"
+              placeholder="blur"
+              blurDataURL={transparentPixel}
+              sizes="50vw"
             />
             <Image
               ref={thirdRef}
-              src={`/galaxy.jpg`}
+              src={`/galaxy.webp`}
               className="opacity-0 object-cover transition-all duration-1000  saturate-0"
               fill
               alt="galaxy"
+              placeholder="blur"
+              blurDataURL={transparentPixel}
+              sizes="50vw"
             />
           </div>
         </div>
@@ -254,7 +292,7 @@ function Projects() {
             <div className="relative w-96  h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
               <a href="https://evently-nu-five.vercel.app/" target="_blank">
                 <video
-                  src="/evently-port.mp4"
+                  src="/evently-port.webm"
                   autoPlay
                   muted
                   loop
@@ -268,7 +306,7 @@ function Projects() {
             <div className="second-img relative w-96  h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
               <a href="https://naruto-chatbot.vercel.app/" target="_blank">
                 <video
-                  src="/naruto-port.mp4"
+                  src="/naruto-port.webm"
                   autoPlay
                   muted
                   loop
@@ -282,7 +320,7 @@ function Projects() {
             <div className="third-img relative w-96  h-56 xl:w-[40vw] xl:h-[22.5vw] overflow-hidden rounded-md">
               <a href="https://galaxy-eta-bice.vercel.app/" target="_blank">
                 <video
-                  src="/galaxy-port.mp4"
+                  src="/galaxy-port.webm"
                   autoPlay
                   muted
                   loop

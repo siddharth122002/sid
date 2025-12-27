@@ -1,7 +1,11 @@
-@import '@fontsource/alumni-sans/400.css'; /* Normal weight */
-@import '@fontsource/alumni-sans/600.css'; /* Semibold weight */
-@import '@fontsource/alumni-sans/700.css'; /* Bold weight */
-@import '@fontsource/wire-one';
+/* Loading fonts from CDN (jsDelivr & Google Fonts). Preloading is handled in app/layout.tsx */
+:root {
+  --font-sans: 'Alumni Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+html, body {
+  font-family: var(--font-sans);
+}
 
 @tailwind base;
 @tailwind components;

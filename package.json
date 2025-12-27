@@ -9,11 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/alumni-sans": "^5.1.1",
-    "@fontsource/wire-one": "^5.1.1",
     "@gsap/react": "^2.1.2",
     "@vercel/analytics": "^1.5.0",
-    "gsap": "^3.12.7",
+    "gsap": "^3.14.2",
     "install": "^0.13.0",
     "locomotive-scroll": "^5.0.0-beta.21",
     "next": "15.1.7",
